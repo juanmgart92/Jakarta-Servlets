@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--INTEGRANTES: JUAN MANUEL GUERRERO ARTEAGA - JUAN DAVID LOPEZ LOMBANA-->
+<html>
+    <head>
+        <title>HIPOTENUSA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+    <center>
+        <h1>HOLA, BIENVENIDO!</h1>
+    </center>
+        <form action="Hipotenusa" method="get">
+            <h2>DIGITA LOS CATETOS PARA HALLAR LA HIPOTENUSA</h2>
+            <p>Digita el numero del 1° cateto: </p>
+            <input type="number" id="hipotenusa1" name="hipotenusa1" required onkeypress='return Validacion(event)' />
+            <p>Digita el numero del 2° cateto: </p>
+            <input type="number" id="hipotenusa2" name="hipotenusa2" required onkeypress='return Validacion(event)' />
+            <input type="submit" value="Calcular">
+        </form>
+    <script >
+        function Validacion(event) {
+        if(event.charCode >= 48 && event.charCode <= 57){
+        return true;
+        }else{
+        alert("¡EL CAMPO DEBE TENER SOLO VALORES NUMERICOS!");
+        return false;
+          }
+        } 
+    </script>
+    </body>
+</html>
